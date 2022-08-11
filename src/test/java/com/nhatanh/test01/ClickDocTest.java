@@ -73,9 +73,9 @@ public class ClickDocTest {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		//Step6: count the number of e-receipts available
-		int count_number_of_e_rezept = driver.findElements(By.cssSelector(".prescription.ng-star-inserted")).size();
+		int count_number_of_e_rezept = driver.findElements(By.cssSelector(".prescription.ng-star-inserted")).size(); //return 2 rezepte
 		//int count_number_of_e_rezept = driver.findElements(By.xpath("/html/body/app-root/div[2]/div[1]/div/app-erezept-erezept-guard-resolver/div/app-prescription-active-list/div/div[2]/app-prescription-list")).size();
-		System.out.println("Die Zahl aktueller E-Rezepte: " + count_number_of_e_rezept); //it return to 1 receipt because there are 2 receipts displayed on the app, but those 2 are duplicates
+		System.out.println("Die Zahl aktueller E-Rezepte: " + count_number_of_e_rezept); 
 	}
 	
 	
